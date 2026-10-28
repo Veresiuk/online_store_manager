@@ -8,5 +8,4 @@ venv/
 dist/
 build/
 .pytest_cache/
-report/
 "@ | Out-File -Encoding utf8 .gitignore
