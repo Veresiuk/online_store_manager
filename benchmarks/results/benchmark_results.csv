@@ -1,0 +1,18 @@
+Experiment,Dataset_Size,Method,Workers,Mean_Time_s,Speedup
+Stock Value Aggregation,10000,Python Baseline,1,0.001489,1.0
+Stock Value Aggregation,10000,NumPy Vectorized,-,0.000312,4.77
+Stock Value Aggregation,50000,Python Baseline,1,0.003825,1.0
+Stock Value Aggregation,50000,NumPy Vectorized,-,0.000131,29.18
+Stock Value Aggregation,100000,Python Baseline,1,0.019233,1.0
+Stock Value Aggregation,100000,NumPy Vectorized,-,0.000822,23.41
+Heavy Repricing,10000,Sequential Baseline,1,0.677094,1.0
+Heavy Repricing,10000,ThreadPoolExecutor,1,0.717972,0.94
+Heavy Repricing,10000,ProcessPoolExecutor,1,0.864161,0.78
+Heavy Repricing,10000,ThreadPoolExecutor,2,0.813039,0.83
+Heavy Repricing,10000,ProcessPoolExecutor,2,0.730061,0.93
+Heavy Repricing,10000,ThreadPoolExecutor,4,0.746533,0.91
+Heavy Repricing,10000,ProcessPoolExecutor,4,0.748041,0.91
+Heavy Repricing,10000,ThreadPoolExecutor,8,0.689994,0.98
+Heavy Repricing,10000,ProcessPoolExecutor,8,1.204606,0.56
+Category Statistics Caching,100000,Cold Cache (Miss),-,0.046147,1.0
+Category Statistics Caching,100000,Warm Cache (Hit),-,0.03331,1.39
